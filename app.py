@@ -1,4 +1,4 @@
-from flask import Flask, render_template, redirect, url_for
+from flask import Flask, render_template, redirect, url_for, Response
 from flask_bootstrap import Bootstrap
 from flask_ckeditor import CKEditor
 from models import ContactForm
@@ -11,6 +11,12 @@ Bootstrap(app)
 # app.config['SQLALCHEMY_DATABASE_URI'] = url_object
 # app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['SECRET_KEY'] = '8BYkEfBA6O6donzWlSihBXox7C0sKR6b'
+
+@app.route('/robots.txt')
+def noindex():
+    r = Response(response="User-Agent: *\nDisallow: /\n", status=200, mimetype="text/plain")
+    r.headers["Content-Type"] = "text/plain; charset=utf-8"
+    return r
 
 @app.route('/')
 def home():  # put application's code here
