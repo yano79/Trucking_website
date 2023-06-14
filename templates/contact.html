@@ -1,0 +1,76 @@
+{% import "bootstrap/wtf.html" as wtf %}
+<!DOCTYPE HTML>
+<!--
+	Helios by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Contact</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../static/css/main.css" />
+		<noscript><link rel="stylesheet" href="../static/css/noscript.css" /></noscript>
+	</head>
+	<body class="no-sidebar is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<div id="another">
+
+					<!-- Inner -->
+						<div class="inner">
+
+                                 {% if msg_sent %}
+                            <h1>Thank you for your message, we will get back to you shortly !</h1>
+                                </header>
+                                     </div>
+                                     {% include 'nav.html' %}
+                        {% else: %}
+								<h1>Scroll down to contact form:</h1>
+
+						</div>
+
+					<!-- Nav -->
+						{% include 'nav.html' %}
+
+				</div>
+
+			<!-- Main -->
+				<div class="wrapper style1">
+
+					<div class="contact">
+						<article id="main" class="special">
+							<header>
+								<p>
+									Aureliano Basso ("Yano")
+								</p>
+
+								<header>
+									<h3>Cell Phone:</h3>
+                                    <p>
+									+1-(804)-592-7481
+								</p>
+								</header>
+								<header>
+									<h3>Email:</h3>
+                                    <p>
+									Aureliano.basso@gmail.com
+								</p>
+								</header>
+                                {{ ckeditor.load(pkg_type="basic") }}
+                    {{ ckeditor.config(name='body') }}
+                    {{ wtf.quick_form(form, novalidate=True, button_map={"submit": "primary"}) }}
+							</header>
+						</article>
+
+						<hr />
+
+					</div>
+
+				</div>
+        </div>
+			<!-- Footer -->
+    {% include 'footer.html' %}
+     {% endif %}

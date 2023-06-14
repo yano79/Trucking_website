@@ -111,7 +111,7 @@ input, select, textarea {
 
 	h1, h2, h3, h4, h5, h6 {
 		font-weight: 400;
-		color: #483949;
+		color: #ffffff;
 		line-height: 1.25em;
 	}
 
@@ -257,6 +257,14 @@ input, select, textarea {
 			}
 
 		}
+
+
+	.contact {
+		width: 60%;
+		margin-left: 320px;
+	}
+
+
 
 		@media screen and (max-width: 840px) {
 
@@ -2166,6 +2174,7 @@ input, select, textarea {
 		background: #fff;
 		margin: 0 0 2em 0;
 		padding: 6em 0 6em 0;
+		width: 120%;
 	}
 
 		.wrapper.style2 {
@@ -2173,6 +2182,30 @@ input, select, textarea {
 		}
 
 /* Header */
+
+#another {
+		position: relative;
+		background-image: url("../images/C592DE1E-D78D-4F67-A296-243010367E49_1_105_c.jpeg");
+		background-size: cover;
+		background-position: top;
+		background-attachment: fixed;
+		color: #fff;
+		text-align: center;
+		padding: 35.5em 0 2em 0;
+		cursor: default;
+	}
+
+#other {
+		position: relative;
+		background-image: url("../images/cropped.jpeg");
+		background-size: cover;
+		background-position: top;
+		background-attachment: fixed;
+		color: #fff;
+		text-align: center;
+		padding: 30.5em 0 2em 0;
+		cursor: default;
+	}
 
 	#header {
 		position: relative;
