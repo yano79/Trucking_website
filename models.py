@@ -1,14 +1,19 @@
 import smtplib
 from email.mime.text import MIMEText
-
+from flask_login import UserMixin
 from flask_ckeditor import CKEditorField
 from flask_wtf import FlaskForm
-from wtforms import StringField, SubmitField, EmailField
+from wtforms import StringField, SubmitField, EmailField, PasswordField
 from wtforms.validators import DataRequired, Length, Email
+from flask_sqlalchemy import SQLAlchemy
+
+
+
 
 MY_EMAIL = "aureliano.basso@gmail.com "
 PASSWORD = "loggnutchvjfvzbg"
 
+db = SQLAlchemy()
 
 class ContactForm(FlaskForm):
     name = StringField(label='Full name:', validators=[DataRequired(), Length(max=50)])
@@ -37,3 +42,29 @@ class ContactForm(FlaskForm):
                 from_addr=MY_EMAIL,
                 to_addrs=msg["To"].split(",") + msg["Cc"].split(","),
                 msg=f"Subject: {subject}\n\n" + body)
+
+
+class LoginForm(FlaskForm):
+    email = EmailField(label='Email Address:', validators=[DataRequired(), Length(max=100), Email()])
+    password = PasswordField(label='Password:', validators=[DataRequired(), Length(min=8)])
+    submit = SubmitField('Login')
+
+class Member(UserMixin, db.Model):
+    __tablename__ = "admins"
+    id = db.Column(db.Integer, primary_key=True)
+    name = db.Column(db.String(1000))
+    email = db.Column(db.String(100), unique=True)
+    password = db.Column(db.String(1000))
+
+
+    def is_active(self):
+        self.is_active = True
+        return self.is_active
+
+    def is_anonymous(self):
+        self.is_anonymous = False
+        return self.is_anonymous
+
+    def is_authenticated(self):
+        self.is_authenticated = True
+        return self.is_authenticated
