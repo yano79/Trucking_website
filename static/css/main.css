@@ -109,10 +109,17 @@ input, select, textarea {
 		font-weight: 300;
 	}
 
-	h1, h2, h3, h4, h5, h6 {
+	h2, h3, h4, h5, h6 {
 		font-weight: 400;
 		color: #ffffff;
 		line-height: 1.25em;
+	}
+
+	h1 {
+		font-weight: 400;
+		color: #ea5f5f;
+		line-height: 1.25em;
+		font-size: 3em;
 	}
 
 	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -2215,13 +2222,37 @@ input, select, textarea {
 
 	#header {
 		position: relative;
-		background-image: url("../images/truck.jpeg");
+		background-image: url("../images/lumber.jpeg");
 		background-size: cover;
 		background-position: center center;
 		background-attachment: fixed;
 		color: #fff;
 		text-align: center;
-		padding: 7.5em 0 2em 0;
+		padding: 30em 0 2em 0;
+		cursor: default;
+	}
+
+	#headerx {
+	position: relative;
+	background-image: url("../images/truck.jpeg");
+	background-size: cover;
+	background-position: center center;
+	background-attachment: fixed;
+	color: #fff;
+	text-align: center;
+	padding: 30em 0 2em 0;
+	cursor: default;
+	}
+
+	#headery {
+		position: relative;
+		background-image: url("../images/manitoba.jpg");
+		background-size: cover;
+		background-position: center center;
+		background-attachment: fixed;
+		color: #fff;
+		text-align: center;
+		padding: 40em 0 2em 0;
 		cursor: default;
 	}
 
@@ -2520,6 +2551,7 @@ input, select, textarea {
 
 		#footer .contact {
 			text-align: center;
+			width: 50%;
 		}
 
 			#footer .contact p {
@@ -2532,7 +2564,9 @@ input, select, textarea {
 			color: rgba(128, 128, 128, 0.75);
 			font-size: 0.8em;
 			cursor: default;
-		}
+			margin-left: 400px;
+}
+
 
 			#footer .copyright a {
 				color: rgba(128, 128, 128, 0.75);
