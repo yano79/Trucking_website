@@ -6,13 +6,14 @@
 
 /* Carousel */
 
-	.carousel {
-		overflow-x: auto;
-	}
+.carousel {
+    overflow-x: auto;
+}
 
 /* Header */
 
-	body.homepage.is-preload #header:after { background-image: url("../images/truck.jpeg");
+body.homepage.is-preload #header:after {
+    background-image: url("../images/truck.jpeg");
 
-		opacity: 0;
-	}
+    opacity: 0;
+}

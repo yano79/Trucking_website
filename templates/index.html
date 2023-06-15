@@ -6,154 +6,168 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html lang="en">
-	<head>
-		<title>Home</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="../static/css/main.css" />
-		<noscript><link rel="stylesheet" href="../static/css/noscript.css" /></noscript>
-	</head>
-	<body class="homepage is-preload">
-		<div id="page-wrapper">
+<head>
+    <title>Home</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+    <link rel="stylesheet" href="../static/css/main.css"/>
+    <noscript>
+        <link rel="stylesheet" href="../static/css/noscript.css"/>
+    </noscript>
+</head>
+<body class="homepage is-preload">
+<div id="page-wrapper">
 
-			<!-- Header -->
-				<div id="headerx">
+    <!-- Header -->
+    <div id="headerx">
 
-					<!-- Inner -->
-						<div class="inner">
-							<header>
-								<h1><a href="index.html" id="logo">Aureliano Basso</a></h1>
-								<hr />
-								<p>COMMERCIAL TRUCK DRIVER</p>
-							</header>
-							<footer>
-								<a href="#banner" class="button circled scrolly">Experience</a>
-							</footer>
-						</div>
-
-					<!-- Nav -->
-						{% include 'nav.html' %}
-</div>
-
-
-
-			<!-- Banner -->
-				<section id="banner">
-					<header>
-						<p>My name is Aureliano Basso, and welcome to my page. I am a commercial truck driver with 20+ years of experience,
-                            ranging from P&D driver to coast-to-coast OTR owner-operator. Particularly during the last seven years,
-                            I operated commercial tractor/trailer combination vehicles with a GWR of 80,000 lbs for various customers
-                            all across the USA and Canada.</p>
-
-					</header>
-				</section>
-
-			<!-- Carousel -->
-				<section class="carousel">
-					<div class="reel">
-
-						<article>
-							<a href="#" class="image featured"><img src="../static/images/BE91353F-F240-4963-8596-359DD85D1669_1_105_c.jpeg" height="216" alt="" /></a>
-							<header>
-								<p>Sunbury Transport Ltd</p>
-							</header>
-							<p>Leased Owner Operator since 2018. I used to haul freight (mainly paper products)
-                            from New Brunswick to the US east coast (New England)</p>
-						</article>
-
-						<article>
-							<a href="{{ url_for('gallery') }}" class="image featured"><img src="../static/images/A434B580-9910-4E91-BBA6-BED68EE0F5CF_1_105_c.jpeg" height="216" alt="" /></a>
-							<header>
-								<p>Clearing House</p>
-							</header>
-							<p>I am enrolled in the Clearing house program and will give consent to access my records to prospective employers who participate in the program.</p>
-						</article>
-
-						<article>
-							<a href="{{ url_for('gallery') }}" class="image featured"><img src="../static/images/0EB1D62F-70F9-400C-BA37-8A2E7648456A_1_105_c.jpeg" height="216" alt="" /></a>
-							<header>
-								<p>OTR driver</p>
-							</header>
-							<p>I drove all across the US and Canada.
-                            Hauled general freight and equipment on a 48 flat-deck tandem trailer.
-                            80,000 GWR.</p>
-						</article>
-
-                        <article>
-							<a href="{{ url_for('gallery') }}" class="image featured"><img src="../static/images/Map.jpeg" alt="" /></a>
-							<header>
-								<p>My work on a map</p>
-							</header>
-							<p>Starting from my NB terminal, I drove <strong>1,350,000 miles</strong> or <strong> 190,000 miles/year </strong> in the last seven years.
-                             Click on the map to see it in the gallery</p>
-						</article>
-					</div>
-				</section>
-
-			<!-- Main -->
-				<div class="wrapper style2">
-
-					<article id="main" class="container special">
-						<a href="#" class="image featured"><img src="../static/images/70204176-0759-4F27-BB08-EB65B1A43C13_1_105_c.jpeg"  alt="" /></a>
-						<header>
-							<p>
-                                A bit about myself...
-
-                                 My nickname is "Yano."
-                                 I started driving trucks in Europe in 2002, and in 2016 I moved to Canada from Europe to start my own trucking business in New Brunswick.
-                                 During the next year and a half, I was employed as a company driver for a local employer when finally, the right opportunity presented
-                                 itself, allowing me to create MooseHorn Trucking Ltd in April 2018.
-							</p>
-						</header>
-						<p>
-
-						</p>
-						<footer>
-							<a href="{{ url_for('experience') }}" class="button">Professional Experience</a>
-						</footer>
-					</article>
-
-				</div>
-
-			<!-- Features -->
-				<div class="wrapper style1">
-
-					<section id="features" class="container special">
-						<div class="row">
-							<article class="col-4 col-12-mobile special">
-									<p><strong>Moosehorn Trucking Ltd:</strong></p>
-									At its peak, MH trucking had a fleet of three trucks with three drivers, including myself.
-                                <ul>
-                                    <li>2019 Freightliner Cascadia </li>
-                                    <li>2014 Peterbilt 567 </li>
-                                    <li>2017 Peterbilt 389 </li>
-                                </ul>
-
-							</article>
-							<article class="col-4 col-12-mobile special">
-
-
-									<p><strong>I moved to the US from Canada
-                                        on January of this year:</strong></p>
-
-								<p>
-									My EAD application was approved on June 6th, 2023.
-                                    See the supporting documents<a href="{{ url_for('documents') }}" style="color: #f35b04"><em> <u>here.</u></em></a>
-								</p>
-							</article>
-							<article class="col-4 col-12-mobile special">
-
-								<p>
-									<strong>Total mileage :</strong>
-								</p>
-                                <p>During the last 7 years I drove approximately
-                                <strong>1,350,000 miles</strong> or 190,000 miles / year. Check it out in the gallery</p>
-							</article>
-						</div>
-					</section>
-
-				</div>
+        <!-- Inner -->
+        <div class="inner">
+            <header>
+                <h1><a href="index.html" id="logo">Aureliano Basso</a></h1>
+                <hr/>
+                <p>COMMERCIAL TRUCK DRIVER</p>
+            </header>
+            <footer>
+                <a href="#banner" class="button circled scrolly">Experience</a>
+            </footer>
         </div>
 
-			<!-- Footer -->
-    {% include 'footer.html' %}
+        <!-- Nav -->
+        {% include 'nav.html' %}
+    </div>
+
+
+    <!-- Banner -->
+    <section id="banner">
+        <header>
+            <p>My name is Aureliano Basso, and welcome to my page. I am a commercial truck driver with 20+ years of
+                experience,
+                ranging from P&D driver to coast-to-coast OTR owner-operator. Particularly during the last seven years,
+                I operated commercial tractor/trailer combination vehicles with a GWR of 80,000 lbs for various
+                customers
+                all across the USA and Canada.</p>
+
+        </header>
+    </section>
+
+    <!-- Carousel -->
+    <section class="carousel">
+        <div class="reel">
+
+            <article>
+                <a href="#" class="image featured"><img
+                        src="../static/images/BE91353F-F240-4963-8596-359DD85D1669_1_105_c.jpeg" height="216"
+                        alt=""/></a>
+                <header>
+                    <p>Sunbury Transport Ltd</p>
+                </header>
+                <p>Leased Owner Operator since 2018. I used to haul freight (mainly paper products)
+                    from New Brunswick to the US east coast (New England)</p>
+            </article>
+
+            <article>
+                <a href="{{ url_for('gallery') }}" class="image featured"><img
+                        src="../static/images/A434B580-9910-4E91-BBA6-BED68EE0F5CF_1_105_c.jpeg" height="216"
+                        alt=""/></a>
+                <header>
+                    <p>Clearing House</p>
+                </header>
+                <p>I am enrolled in the Clearing house program and will give consent to access my records to prospective
+                    employers who participate in the program.</p>
+            </article>
+
+            <article>
+                <a href="{{ url_for('gallery') }}" class="image featured"><img
+                        src="../static/images/0EB1D62F-70F9-400C-BA37-8A2E7648456A_1_105_c.jpeg" height="216"
+                        alt=""/></a>
+                <header>
+                    <p>OTR driver</p>
+                </header>
+                <p>I drove all across the US and Canada.
+                    Hauled general freight and equipment on a 48 flat-deck tandem trailer.
+                    80,000 GWR.</p>
+            </article>
+
+            <article>
+                <a href="{{ url_for('gallery') }}" class="image featured"><img src="../static/images/Map.jpeg" alt=""/></a>
+                <header>
+                    <p>My work on a map</p>
+                </header>
+                <p>Starting from my NB terminal, I drove <strong>1,350,000 miles</strong> or <strong> 190,000
+                    miles/year </strong> in the last seven years.
+                    Click on the map to see it in the gallery</p>
+            </article>
+        </div>
+    </section>
+
+    <!-- Main -->
+    <div class="wrapper style2">
+
+        <article id="main" class="container special">
+            <a href="#" class="image featured"><img
+                    src="../static/images/70204176-0759-4F27-BB08-EB65B1A43C13_1_105_c.jpeg" alt=""/></a>
+            <header>
+                <p>
+                    A bit about myself...
+
+                    My nickname is "Yano."
+                    I started driving trucks in Europe in 2002, and in 2016 I moved to Canada from Europe to start my
+                    own trucking business in New Brunswick.
+                    During the next year and a half, I was employed as a company driver for a local employer when
+                    finally, the right opportunity presented
+                    itself, allowing me to create MooseHorn Trucking Ltd in April 2018.
+                </p>
+            </header>
+            <p>
+
+            </p>
+            <footer>
+                <a href="{{ url_for('experience') }}" class="button">Professional Experience</a>
+            </footer>
+        </article>
+
+    </div>
+
+    <!-- Features -->
+    <div class="wrapper style1">
+
+        <section id="features" class="container special">
+            <div class="row">
+                <article class="col-4 col-12-mobile special">
+                    <p><strong>Moosehorn Trucking Ltd:</strong></p>
+                    At its peak, MH trucking had a fleet of three trucks with three drivers, including myself.
+                    <ul>
+                        <li>2019 Freightliner Cascadia</li>
+                        <li>2014 Peterbilt 567</li>
+                        <li>2017 Peterbilt 389</li>
+                    </ul>
+
+                </article>
+                <article class="col-4 col-12-mobile special">
+
+
+                    <p><strong>I moved to the US from Canada
+                        on January of this year:</strong></p>
+
+                    <p>
+                        My EAD application was approved on June 6th, 2023.
+                        See the supporting documents<a href="{{ url_for('documents') }}" style="color: #f35b04"><em> <u>here.</u></em></a>
+                    </p>
+                </article>
+                <article class="col-4 col-12-mobile special">
+
+                    <p>
+                        <strong>Total mileage :</strong>
+                    </p>
+                    <p>During the last 7 years I drove approximately
+                        <strong>1,350,000 miles</strong> or 190,000 miles / year. Check it out in the gallery</p>
+                </article>
+            </div>
+        </section>
+
+    </div>
+</div>
+
+<!-- Footer -->
+{% include 'footer.html' %}

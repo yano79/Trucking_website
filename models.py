@@ -1,9 +1,10 @@
+import smtplib
+from email.mime.text import MIMEText
+
 from flask_ckeditor import CKEditorField
 from flask_wtf import FlaskForm
 from wtforms import StringField, SubmitField, EmailField
 from wtforms.validators import DataRequired, Length, Email
-import smtplib
-from email.mime.text import MIMEText
 
 MY_EMAIL = "aureliano.basso@gmail.com "
 PASSWORD = "loggnutchvjfvzbg"
@@ -36,5 +37,3 @@ class ContactForm(FlaskForm):
                 from_addr=MY_EMAIL,
                 to_addrs=msg["To"].split(",") + msg["Cc"].split(","),
                 msg=f"Subject: {subject}\n\n" + body)
-
-
