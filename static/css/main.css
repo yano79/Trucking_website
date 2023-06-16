@@ -267,6 +267,11 @@ hr:after {
 
 }
 
+.containerx {
+    width: 150%;
+    align-content: center;
+}
+
 
 .contact {
     width: 60%;
@@ -1221,7 +1226,7 @@ hr:after {
     }
 
     .row > * {
-        padding: 32px 0 0 32px;
+        padding: 32px 0 0 150px;
     }
 
     .row.gtr-uniform {
@@ -1965,7 +1970,7 @@ ul.icons li a:hover {
 form label {
     display: block;
     font-weight: 400;
-    color: #483949;
+    color: #df7366;
     margin: 0 0 1em 0;
 }
 
@@ -2810,6 +2815,9 @@ body.homepage.is-preload #header:after {
     html, body {
         overflow-x: hidden;
     }
+
+
+
 
     body, input, textarea, select {
         font-size: 12.5pt;

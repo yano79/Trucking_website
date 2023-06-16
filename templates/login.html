@@ -1,26 +1,35 @@
-{% extends 'bootstrap/base.html' %}
+
 {% import "bootstrap/wtf.html" as wtf %}
 
-{% block content %}
-    {% include 'header.html' %}
+<!DOCTYPE HTML>
+<!--
+	Helios by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="en">
+<head>
+    <title>Home</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+    <link rel="stylesheet" href="../static/css/main.css"/>
+    <noscript>
+        <link rel="stylesheet" href="../static/css/noscript.css"/>
+    </noscript>
+</head>
+
+
+<body>
     <!-- Page Header-->
-    <header class="masthead" style="background-image: url({{ url_for('static', filename='img/garlic1.png') }})">
-        <div class="container position-relative px-4 px-lg-5">
-            <div class="row gx-4 gx-lg-5 justify-content-center">
-                <div class="col-md-10 col-lg-8 col-xl-7">
-                    <div class="site-heading">
-                        <h1>Log In</h1>
-                        <span class="subheading"><a
-                                href="https://www.freepik.com/free-photo/black-t-shirts-with-copy-space_15474803.htm#&position=0&from_view=popular">Image by rawpixel.com</a> on Freepik</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
+
     <!-- Main Content-->
     <div class="container">
-        <div class="row">
+        <div class="row" style="background-image: url({{ url_for('static', filename='images/8625B4A9-5823-4038-AD58-595882EFDC34_1_105_c.jpeg') }});
+                background-repeat: no-repeat; width: 100%">
+
             <div class="col-lg-11 col-md-10 mx-auto content">
+            <div><a href=""></a><br><br><br></div>
+            <h1>Log In</h1>
                 {% with messages = get_flashed_messages() %}
                     {% if messages %}
                         <div class="notification is-danger" style="color: red;">
@@ -29,12 +38,12 @@
                             {% endfor %}
                         </div>
                     {% endif %}
-                {% endwith %}
+                {% endwith %}<br>
                 {{ wtf.quick_form(form, novalidate=True, button_map={"submit": "primary"}) }}
             </div>
         </div>
     </div>
+</body>
 
 
-    {% include "footer.html" %}
-{% endblock %}
+

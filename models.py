@@ -45,15 +45,15 @@ class ContactForm(FlaskForm):
 
 
 class LoginForm(FlaskForm):
-    email = EmailField(label='Email Address:', validators=[DataRequired(), Length(max=100), Email()])
-    password = PasswordField(label='Password:', validators=[DataRequired(), Length(min=8)])
+    user = StringField(label='USER :', validators=[DataRequired(), Length(max=100)])
+    password = PasswordField(label='PASSWORD :', validators=[DataRequired(), Length(min=8)])
     submit = SubmitField('Login')
 
 class Member(UserMixin, db.Model):
     __tablename__ = "admins"
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(1000))
-    email = db.Column(db.String(100), unique=True)
+    user = db.Column(db.String(100), unique=True)
     password = db.Column(db.String(1000))
 
 
