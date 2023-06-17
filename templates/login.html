@@ -19,31 +19,34 @@
 </head>
 
 
-<body>
-    <!-- Page Header-->
-
-    <!-- Main Content-->
+<body class="bodi">
     <div class="container">
-        <div class="row" style="background-image: url({{ url_for('static', filename='images/8625B4A9-5823-4038-AD58-595882EFDC34_1_105_c.jpeg') }});
-                background-repeat: no-repeat; width: 100%">
+    {% include 'nav.html' %}
+      <div class="row">
+        <div class="col-md-8 offset-md-2">
 
-            <div class="col-lg-11 col-md-10 mx-auto content">
-            <div><a href=""></a><br><br><br></div>
-            <h1>Log In</h1>
-                {% with messages = get_flashed_messages() %}
+          <div class="login-form">
+           {% with messages = get_flashed_messages() %}
                     {% if messages %}
                         <div class="notification is-danger" style="color: red;">
                             {% for message in messages %}
                                 {{ message }}
                             {% endfor %}
+
                         </div>
                     {% endif %}
-                {% endwith %}<br>
+                {% endwith %}
                 {{ wtf.quick_form(form, novalidate=True, button_map={"submit": "primary"}) }}
-            </div>
+          </div>
+
         </div>
+
+      </div>
+
     </div>
-</body>
 
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 
+  </body>
 

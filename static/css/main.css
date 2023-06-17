@@ -23,8 +23,39 @@ section, summary, time, mark, audio, video {
     border: 0;
     font-size: 100%;
     font: inherit;
+    font-weight: bold;
     vertical-align: baseline;
+    margin-left: 0px;
 }
+
+.bodi{
+          background-image: url("../images/truck.jpeg");
+          background-repeat: no-repeat, repeat;
+          background-position: center; /* Center the image */
+          background-size: cover; /* Resize the background image to cover the entire container */
+          padding-top: 50px;
+        }
+        .login-form{
+          background:#1a11117a;
+          margin-top: 100px;
+          margin-bottom: 100px;
+          padding: 100px;
+          border-radius: 50px;
+          color: white;
+          box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+        }
+        .login-heading{
+          text-align: center;
+          margin-top: 20px;
+        }
+        .container{
+          background: #09090a4f;
+          border-radius: 50px;
+          box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.38);
+        }
+        .btn-primary{
+          width: 100%;
+        }
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -85,8 +116,8 @@ html {
 }
 
 body {
-    background: #f0f4f4;
-    color: #5b5b5b;
+    background: #df7366;
+    color: #fff;
     font-size: 15pt;
     line-height: 1.85em;
     font-family: 'Source Sans Pro', sans-serif;
@@ -150,6 +181,7 @@ h4 {
 strong, b {
     font-weight: 400;
     color: #483949;
+    margin-left: 30px;
 }
 
 em, i {
@@ -239,8 +271,8 @@ hr:after {
 
 .container {
     margin: 0 auto;
-    max-width: 100%;
     width: 1400px;
+    max-width: 80%;
 }
 
 @media screen and (max-width: 1680px) {
@@ -545,6 +577,7 @@ hr:after {
         flex-wrap: wrap;
         box-sizing: border-box;
         align-items: stretch;
+        width: 25%;
     }
 
     .row > * {
@@ -732,11 +765,11 @@ hr:after {
 
     .row {
         margin-top: -40px;
-        margin-left: -40px;
+        margin-left: 0px;
     }
 
     .row > * {
-        padding: 40px 0 0 40px;
+        padding: 60px 0;
     }
 
     .row.gtr-uniform {
@@ -1221,8 +1254,8 @@ hr:after {
     }
 
     .row {
-        margin-top: -32px;
-        margin-left: -32px;
+        margin-top: 0;
+        margin-left: 3rem;
     }
 
     .row > * {
@@ -1771,6 +1804,7 @@ section, article {
 
 section > :last-child, section:last-child, article > :last-child, article:last-child {
     margin-bottom: 0;
+    margin-left: 30px;
 }
 
 section.special > header, section.special > footer, article.special > header, article.special > footer {
@@ -1916,6 +1950,7 @@ ul.menu {
     line-height: 1em;
     list-style: none;
     padding-left: 0;
+    margin-right: 20rem;
 }
 
 ul.menu li {
@@ -1942,6 +1977,7 @@ ul.icons {
     font-size: 1.25em;
     cursor: default;
     list-style: none;
+    margin-right: 20px;
 }
 
 ul.icons li {
@@ -2220,7 +2256,7 @@ header .icon.circled {
     background-size: cover;
     background-position: top;
     background-attachment: fixed;
-    color: #fff;
+    color: #df7366;
     text-align: center;
     padding: 30.5em 0 2em 0;
     cursor: default;
@@ -2244,7 +2280,7 @@ header .icon.circled {
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
-    color: #fff;
+    color: #df7366;
     text-align: center;
     padding: 30em 0 2em 0;
     cursor: default;
@@ -2256,7 +2292,7 @@ header .icon.circled {
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
-    color: #fff;
+    color: #ea5f5f;
     text-align: center;
     padding: 40em 0 2em 0;
     cursor: default;
@@ -2361,12 +2397,13 @@ body.homepage.is-preload #header:after {
 #nav {
     position: absolute;
     top: 0;
-    left: 0;
-    width: 100%;
+    left: auto;
     text-align: center;
     padding: 1.5em 0 1.5em 0;
     z-index: 1;
     overflow: hidden;
+    width: 80%;
+
 }
 
 #nav > ul {
@@ -2519,6 +2556,7 @@ body.homepage.is-preload #header:after {
 
 #sidebar > section {
     margin-bottom: 0;
+    margin-left: 40px;
 }
 
 /* Main */
@@ -2731,8 +2769,8 @@ body.homepage.is-preload #header:after {
 
     /* Basic */
     body, input, textarea, select {
-        font-size: 12pt;
-        line-height: 1.5em;
+        font-size: 13pt;
+        line-height: 4em;
     }
 
     /* Wrapper */
