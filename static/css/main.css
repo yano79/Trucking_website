@@ -116,8 +116,8 @@ html {
 }
 
 body {
-    background: #df7366;
-    color: #fff;
+    background: #fff;
+    color: black;
     font-size: 15pt;
     line-height: 1.85em;
     font-family: 'Source Sans Pro', sans-serif;
@@ -171,6 +171,8 @@ h2 {
 
 h3 {
     font-size: 1.25em;
+    margin-right: 270px;
+
 }
 
 h4 {
@@ -306,8 +308,8 @@ hr:after {
 
 
 .contact {
-    width: 60%;
-    margin-left: 320px;
+    width: 40%;
+    margin-left: 440px;
 }
 
 
@@ -1804,7 +1806,7 @@ section, article {
 
 section > :last-child, section:last-child, article > :last-child, article:last-child {
     margin-bottom: 0;
-    margin-left: 30px;
+    margin-left: 70px;
 }
 
 section.special > header, section.special > footer, article.special > header, article.special > footer {
@@ -1825,7 +1827,7 @@ header > p {
     margin: 1em 0 2em 0;
     line-height: 1.5em;
     text-align: inherit;
-    color: sandybrown;
+    color: black;
 }
 
 footer {
@@ -1849,6 +1851,7 @@ footer {
 .image img {
     display: block;
     width: 100%;
+    margin-left: 0px;
 }
 
 .image.fit {
@@ -1977,7 +1980,7 @@ ul.icons {
     font-size: 1.25em;
     cursor: default;
     list-style: none;
-    margin-right: 20px;
+    margin-right: 300px;
 }
 
 ul.icons li {
@@ -2244,7 +2247,7 @@ header .icon.circled {
     background-size: cover;
     background-position: top;
     background-attachment: fixed;
-    color: #fff;
+    color: #ea5f5f;
     text-align: center;
     padding: 35.5em 0 2em 0;
     cursor: default;
@@ -2268,7 +2271,7 @@ header .icon.circled {
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
-    color: #fff;
+    color: #ee7272;
     text-align: center;
     padding: 30em 0 2em 0;
     cursor: default;
@@ -2395,6 +2398,18 @@ body.homepage.is-preload #header:after {
 /* Nav */
 
 #nav {
+    position: absolute;
+    top: 0;
+    left: auto;
+    text-align: center;
+    padding: 1.5em 0 1.5em 0;
+    z-index: 1;
+    overflow: hidden;
+    width: 100%;
+
+}
+
+#navs {
     position: absolute;
     top: 0;
     left: auto;

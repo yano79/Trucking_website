@@ -21,7 +21,12 @@
 
 <body class="bodi">
     <div class="container">
-    {% include 'nav.html' %}
+    <nav id="navs">
+    <ul>
+        <li><a href="{{ url_for('home') }}">Home</a></li>
+        <li><a href="{{ url_for('contact') }}">Contact Me</a></li>
+    </ul>
+</nav>
       <div class="row">
         <div class="col-md-8 offset-md-2">
 
