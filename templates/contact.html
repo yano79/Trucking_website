@@ -26,7 +26,6 @@
 
             {% if msg_sent %}
                 <h1>Thank you for your message, we will get back to you shortly !</h1>
-                </header>
                 </div>
                 {% include 'nav.html' %}
             {% else: %}
@@ -43,35 +42,11 @@
                 <div class="wrapper style1">
 
                     <div class="contact">
-                        <article id="main" class="special">
-                            <header>
-                                <p>
-                                    Aureliano Basso ("Yano")
-                                </p>
-
-                                <header>
-                                    <h3>Cell Phone:</h3>
-                                    <p>
-                                        +1-(804)-592-7481
-                                    </p>
-                                </header>
-                                <header>
-                                    <h3>Email:</h3>
-                                    <p>
-                                        Aureliano.basso@gmail.com
-                                    </p>
-                                </header>
                                 {{ ckeditor.load(pkg_type="basic") }}
                                 {{ ckeditor.config(name='body') }}
                                 {{ wtf.quick_form(form, novalidate=True, button_map={"submit": "primary"}) }}
-                            </header>
-                        </article>
-
-                        <hr/>
-
                     </div>
 
-                </div>
                 </div>
                 <!-- Footer -->
                 {% include 'footer.html' %}

@@ -43,7 +43,7 @@ section, summary, time, mark, audio, video {
     padding: 100px;
     border-radius: 50px;
     color: white;
-    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 5px 0px rgba(164, 108, 108, 0.75);
 }
 
 .login-heading {
@@ -1811,7 +1811,7 @@ section, article {
 
 section > :last-child, section:last-child, article > :last-child, article:last-child {
     margin-bottom: 0;
-    margin-left: 30px;
+    margin-left: 35px;
 }
 
 section.special > header, section.special > footer, article.special > header, article.special > footer {
@@ -1890,7 +1890,7 @@ footer {
 ul {
     list-style: disc;
     padding-left: 1em;
-    margin-left: 320px;
+    margin-left: 30px;
 }
 
 ul li {
@@ -1972,7 +1972,7 @@ ul.menu li {
 ul.menu li:first-child {
     border-left: 0;
     padding-left: 0;
-    margin-left: -320px;
+    margin-left: -30px;
 }
 
 /* Icons */
@@ -1986,7 +1986,7 @@ ul.icons {
     font-size: 1.25em;
     cursor: default;
     list-style: none;
-    margin-right: 340px;
+    margin-right: 310px;
 }
 
 ul.icons li {
