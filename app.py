@@ -1,13 +1,15 @@
+import logging
+
 from flask import Flask, render_template, Response, redirect, url_for, flash
 from flask_bootstrap import Bootstrap
 from flask_ckeditor import CKEditor
-from flask_login import LoginManager, login_user, current_user, logout_user, login_required
-from models import ContactForm, db, LoginForm, Member
-from werkzeug.security import generate_password_hash, check_password_hash
+from flask_login import LoginManager, login_user, logout_user, login_required
 from sqlalchemy import URL
-import logging
+from werkzeug.security import generate_password_hash, check_password_hash
 
-logging.basicConfig(filename='./example.log', encoding='utf-8',filemode='w', level=logging.DEBUG)
+from models import ContactForm, db, LoginForm, Member
+
+logging.basicConfig(filename='./example.log', encoding='utf-8', filemode='w', level=logging.DEBUG)
 logging.debug('This message should go to the log file')
 logging.info('So should this')
 logging.warning('And this, too')
@@ -35,24 +37,27 @@ app.config['SECRET_KEY'] = '8BYkEfBA6O6donzWlSihBXox7C0sKR6b'
 
 new_admin = Member(name='admin',
                    user='yano79',
-                   password=generate_password_hash("admin3%&79","pbkdf2",8))
+                   password=generate_password_hash("admin3%&79", "pbkdf2", 8))
 # hy7g%0}\@sxD)
 # name="admin",
 #                    email="yano79@aol.com",
 
 
 db.init_app(app)
+
+
 # with app.app_context():
-    # db.session.query(Member).delete()
-    # db.drop_all()
-    # db.create_all()
-    # db.session.add(new_admin)
-    # db.session.commit()
-    # articles = db.session.query(Member).all()
+# db.session.query(Member).delete()
+# db.drop_all()
+# db.create_all()
+# db.session.add(new_admin)
+# db.session.commit()
+# articles = db.session.query(Member).all()
 
 @login_manager.user_loader
 def load_user(user_id):
     return Member.query.get(int(user_id))
+
 
 @app.route('/robots.txt')
 def noindex():
@@ -97,6 +102,7 @@ def login():
             flash('Email and/or password incorrect. Please Try again')
             return redirect(url_for('login'))
     return render_template('login.html', form=login_form)
+
 
 @app.route('/logout')
 @login_required

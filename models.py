@@ -1,19 +1,18 @@
 import smtplib
 from email.mime.text import MIMEText
-from flask_login import UserMixin
+
 from flask_ckeditor import CKEditorField
+from flask_login import UserMixin
+from flask_sqlalchemy import SQLAlchemy
 from flask_wtf import FlaskForm
 from wtforms import StringField, SubmitField, EmailField, PasswordField
 from wtforms.validators import DataRequired, Length, Email
-from flask_sqlalchemy import SQLAlchemy
-
-
-
 
 MY_EMAIL = "aureliano.basso@gmail.com "
 PASSWORD = "loggnutchvjfvzbg"
 
 db = SQLAlchemy()
+
 
 class ContactForm(FlaskForm):
     name = StringField(label='Full name:', validators=[DataRequired(), Length(max=50)])
@@ -49,13 +48,13 @@ class LoginForm(FlaskForm):
     password = PasswordField(label='PASSWORD :', validators=[DataRequired(), Length(min=8)])
     submit = SubmitField('Login')
 
+
 class Member(UserMixin, db.Model):
     __tablename__ = "admins"
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(1000))
     user = db.Column(db.String(100), unique=True)
     password = db.Column(db.String(1000))
-
 
     def is_active(self):
         self.is_active = True
