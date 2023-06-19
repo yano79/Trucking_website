@@ -5,3 +5,20 @@ ERROR:root:And non-ASCII stuff, too, like Øresund and Malmö
 INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on http://127.0.0.1:5000
 INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [19/Jun/2023 07:23:03] "GET /experience HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jun/2023 07:23:03] "GET /static/js/jquery.scrolly.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jun/2023 07:23:03] "GET /static/css/main.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jun/2023 07:23:03] "GET /static/js/jquery.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jun/2023 07:23:03] "GET /static/js/jquery.dropotron.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jun/2023 07:23:03] "GET /static/js/jquery.scrollex.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jun/2023 07:23:03] "GET /static/js/browser.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jun/2023 07:23:03] "GET /static/js/breakpoints.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jun/2023 07:23:03] "GET /static/js/util.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jun/2023 07:23:03] "GET /static/js/main.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jun/2023 07:23:03] "GET /static/images/E07AE861-35ED-4729-80A8-642D93843837_1_105_c.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jun/2023 07:23:03] "GET /static/images/BAF86163-3DAD-4625-8D2A-85030DB0C2D4_1_105_c.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jun/2023 07:23:03] "GET /static/css/fontawesome-all.min.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jun/2023 07:23:03] "GET /static/images/FA4552A6-8D65-44C0-9399-F7EE45E5D9E4_1_105_c.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jun/2023 07:23:04] "GET /static/images/manitoba.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jun/2023 07:23:04] "GET /static/webfonts/fa-brands-400.woff2 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jun/2023 07:23:04] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
