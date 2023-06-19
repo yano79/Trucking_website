@@ -5,24 +5,3 @@ ERROR:root:And non-ASCII stuff, too, like Øresund and Malmö
 INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on http://127.0.0.1:5000
 INFO:werkzeug:[33mPress CTRL+C to quit[0m
-INFO:werkzeug:127.0.0.1 - - [19/Jun/2023 07:05:58] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [19/Jun/2023 07:05:58] "GET /static/css/main.css HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [19/Jun/2023 07:05:58] "GET /static/js/jquery.scrolly.min.js HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [19/Jun/2023 07:05:58] "GET /static/js/jquery.min.js HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [19/Jun/2023 07:05:58] "GET /static/js/browser.min.js HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [19/Jun/2023 07:05:58] "GET /static/js/jquery.dropotron.min.js HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [19/Jun/2023 07:05:58] "GET /static/js/jquery.scrollex.min.js HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [19/Jun/2023 07:05:58] "GET /static/js/breakpoints.min.js HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [19/Jun/2023 07:05:58] "GET /static/js/util.js HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [19/Jun/2023 07:05:58] "GET /static/images/70204176-0759-4F27-BB08-EB65B1A43C13_1_105_c.jpeg HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [19/Jun/2023 07:05:58] "GET /static/images/BE91353F-F240-4963-8596-359DD85D1669_1_105_c.jpeg HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [19/Jun/2023 07:05:58] "GET /static/js/main.js HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [19/Jun/2023 07:05:58] "GET /static/images/A434B580-9910-4E91-BBA6-BED68EE0F5CF_1_105_c.jpeg HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [19/Jun/2023 07:05:58] "GET /static/images/0EB1D62F-70F9-400C-BA37-8A2E7648456A_1_105_c.jpeg HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [19/Jun/2023 07:05:58] "GET /static/css/fontawesome-all.min.css HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [19/Jun/2023 07:05:58] "GET /static/images/Map.jpeg HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [19/Jun/2023 07:05:58] "GET /static/images/truck.jpeg HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [19/Jun/2023 07:05:58] "GET /static/webfonts/fa-brands-400.woff2 HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [19/Jun/2023 07:05:58] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-INFO:werkzeug:127.0.0.1 - - [19/Jun/2023 07:05:59] "GET /static/webfonts/fa-brands-400.woff2 HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [19/Jun/2023 07:05:59] "GET /static/images/arrow.svg HTTP/1.1" 200 -
