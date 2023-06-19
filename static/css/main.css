@@ -28,6 +28,11 @@ section, summary, time, mark, audio, video {
     margin-left: 0px;
 }
 
+.iconx:hover{
+
+    color: #ef8376
+}
+
 .bodi {
     background-image: url("../images/truck.jpeg");
     background-repeat: no-repeat, repeat;
