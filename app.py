@@ -1,4 +1,4 @@
-import logging
+# import logging
 
 from flask import Flask, render_template, Response, redirect, url_for, flash
 from flask_bootstrap import Bootstrap
@@ -9,11 +9,11 @@ from werkzeug.security import generate_password_hash, check_password_hash
 
 from models import ContactForm, db, LoginForm, Member
 
-logging.basicConfig(filename='./example.log', encoding='utf-8', filemode='w', level=logging.DEBUG)
-logging.debug('This message should go to the log file')
-logging.info('So should this')
-logging.warning('And this, too')
-logging.error('And non-ASCII stuff, too, like Øresund and Malmö')
+# logging.basicConfig(filename='./example.log', encoding='utf-8', filemode='w', level=logging.DEBUG)
+# logging.debug('This message should go to the log file')
+# logging.info('So should this')
+# logging.warning('And this, too')
+# logging.error('And non-ASCII stuff, too, like Øresund and Malmö')
 
 url_object = URL.create(
     "mysql+pymysql",
@@ -35,9 +35,9 @@ app.config['SQLALCHEMY_DATABASE_URI'] = url_object
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['SECRET_KEY'] = '8BYkEfBA6O6donzWlSihBXox7C0sKR6b'
 
-new_admin = Member(name='admin',
-                   user='yano79',
-                   password=generate_password_hash("admin3%&79", "pbkdf2", 8))
+# new_admin = Member(name='admin',
+#                    user='yano79',
+#                    password=generate_password_hash("admin3%&79", "pbkdf2", 8))
 # hy7g%0}\@sxD)
 # name="admin",
 #                    email="yano79@aol.com",
